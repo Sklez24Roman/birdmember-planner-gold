@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html><head><script>window.__resources = {"logo":"assets/logo.png","maria":"assets/maria.png","james":"assets/james.png","https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/react-dom.production.min.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Birdmember Planner — Gold</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<script src="assets/304fcfd8-5d8b-43df-99f0-f963062d0800.js"></script>
+</head>
+<body>
+
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/5f5d9e9b-c03d-4c46-b749-9459ce30c602.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/e65a1b76-c208-4894-9f27-d2246ca858e5.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/b960134f-5364-43b4-b385-38f8e634083a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/d1c60fa9-744f-47e6-b0e7-a133b1bb0ec4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/47084f3f-b603-4fe8-be92-2430a2af4487.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/5f5d9e9b-c03d-4c46-b749-9459ce30c602.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/e65a1b76-c208-4894-9f27-d2246ca858e5.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/b960134f-5364-43b4-b385-38f8e634083a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/d1c60fa9-744f-47e6-b0e7-a133b1bb0ec4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/47084f3f-b603-4fe8-be92-2430a2af4487.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/5f5d9e9b-c03d-4c46-b749-9459ce30c602.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/e65a1b76-c208-4894-9f27-d2246ca858e5.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/b960134f-5364-43b4-b385-38f8e634083a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/d1c60fa9-744f-47e6-b0e7-a133b1bb0ec4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/47084f3f-b603-4fe8-be92-2430a2af4487.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/5f5d9e9b-c03d-4c46-b749-9459ce30c602.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/e65a1b76-c208-4894-9f27-d2246ca858e5.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/b960134f-5364-43b4-b385-38f8e634083a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/d1c60fa9-744f-47e6-b0e7-a133b1bb0ec4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/47084f3f-b603-4fe8-be92-2430a2af4487.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{margin:0;background:#0B1B33;-webkit-font-smoothing:antialiased}
+a{color:#F2890C}a:hover{color:#FFA33C}
+::-webkit-scrollbar{width:0;height:0}
+textarea:focus{outline:none;border-color:#6FB1E8 !important}
+textarea::placeholder{color:rgba(255,255,255,.38)}
+input[type="time"]{color-scheme:dark}
+@keyframes bmSheetUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes bmFade{from{opacity:0}to{opacity:1}}
+@keyframes bmToast{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#0B1B33;display:flex;flex-direction:column;align-items:center;padding:24px 10px;font-family:'Montserrat',-apple-system,sans-serif;color:#fff">
+  <div data-screen-label="Birdmember phone" style="width:440px;max-width:100%;height:min(956px,100dvh);background:radial-gradient(130% 90% at 50% 0%,#1161A8 0%,#0C4D93 45%,#093C76 100%);border-radius:30px;box-shadow:0 18px 54px rgba(0,0,0,.5);overflow:hidden;position:relative">
+
+    <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none">
+      <svg width="440" height="956" sc-camel-view-box="0 0 440 956" style="position:absolute;inset:0;opacity:.38">
+        <ellipse cx="220" cy="470" rx="430" ry="430" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1"></ellipse>
+        <ellipse cx="220" cy="470" rx="300" ry="300" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="1"></ellipse>
+        <path d="M-40 360 Q 220 120 470 380" fill="none" stroke="#F2890C" stroke-width="1.1" stroke-opacity=".5"></path>
+        <path d="M-20 640 Q 240 760 480 560" fill="none" stroke="#F2890C" stroke-width="1.1" stroke-opacity=".4"></path>
+        <circle cx="150" cy="293" r="3" fill="#F2890C"></circle>
+        <circle cx="372" cy="332" r="3" fill="#F2890C"></circle>
+        <circle cx="300" cy="690" r="3" fill="#F2890C"></circle>
+        <circle cx="40" cy="120" r="1.3" fill="#fff" fill-opacity=".28"></circle>
+        <circle cx="137" cy="233" r=".9" fill="#fff" fill-opacity=".2"></circle>
+        <circle cx="234" cy="60" r="1.9" fill="#fff" fill-opacity=".3"></circle>
+        <circle cx="331" cy="173" r="1.1" fill="#fff" fill-opacity=".22"></circle>
+        <circle cx="418" cy="286" r="1.6" fill="#fff" fill-opacity=".33"></circle>
+        <circle cx="85" cy="399" r=".8" fill="#fff" fill-opacity=".2"></circle>
+        <circle cx="182" cy="512" r="1.4" fill="#fff" fill-opacity=".26"></circle>
+        <circle cx="279" cy="425" r="1" fill="#fff" fill-opacity=".22"></circle>
+        <circle cx="376" cy="538" r="1.8" fill="#fff" fill-opacity=".3"></circle>
+        <circle cx="33" cy="651" r="1.2" fill="#fff" fill-opacity=".24"></circle>
+        <circle cx="130" cy="764" r="1.6" fill="#fff" fill-opacity=".3"></circle>
+        <circle cx="227" cy="877" r=".9" fill="#fff" fill-opacity=".2"></circle>
+        <circle cx="324" cy="820" r="1.3" fill="#fff" fill-opacity=".26"></circle>
+        <circle cx="404" cy="700" r="1" fill="#fff" fill-opacity=".22"></circle>
+      </svg>
+    </div>
+
+    <div style="height:54px;display:flex;align-items:center;justify-content:space-between;padding:12px 34px 0;font-weight:600;color:#fff;font-size:17px;position:absolute;top:0;left:0;right:0;z-index:30;pointer-events:none">
+      <span>9:41</span>
+      <div style="width:124px;height:37px;border-radius:22px;background:#000;position:absolute;left:50%;transform:translateX(-50%);top:11px"></div>
+      <div style="display:flex;gap:6px;align-items:center">
+        <svg width="19" height="12" sc-camel-view-box="0 0 19 12"><rect x="0" y="8" width="3" height="4" rx=".5" fill="#fff"></rect><rect x="5" y="5" width="3" height="7" rx=".5" fill="#fff"></rect><rect x="10" y="2" width="3" height="10" rx=".5" fill="#fff"></rect><rect x="15" y="0" width="3" height="12" rx=".5" fill="#fff"></rect></svg>
+        <svg width="27" height="12" sc-camel-view-box="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3" fill="none" stroke="#fff" opacity=".5"></rect><rect x="2" y="2" width="20" height="8" rx="2" fill="#fff"></rect><rect x="24.5" y="3.5" width="2" height="5" rx="1" fill="#fff" opacity=".5"></rect></svg>
+      </div>
+    </div>
+
+    <div ref="{{ screenRef }}" style="height:100%;overflow-y:auto;padding:66px 26px 150px;position:relative">
+
+      <sc-if value="{{ isPlanner }}" hint-placeholder-val="{{ true }}">
+        <div data-screen-label="Planner" style="min-height:10px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:38px;height:38px;border-radius:19px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.3);flex:none">
+                <img src="assets/logo.png" alt="" style="width:27px;height:27px;display:block;object-fit:contain">
+              </div>
+              <span style="font-weight:700;font-size:20px;color:#fff">Planner</span>
+            </div>
+            <button sc-camel-on-click="{{ openNew }}" style="height:36px;padding:0 14px;border-radius:50px;background:#F2890C;color:#fff;border:none;display:flex;align-items:center;gap:7px;font-family:inherit;font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 6px 16px rgba(242,137,12,.35)" style-hover="filter:brightness(1.06)"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg>New</button>
+          </div>
+          <div style="font-size:14px;color:rgba(255,255,255,.66);margin-top:7px">Manage your travel plans</div>
+          <div style="margin-top:13px;height:1px;background:rgba(255,255,255,.12)"></div>
+
+          <sc-if value="{{ hasRoutes }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;align-items:center;gap:8px;margin:13px 0 10px">
+              <span style="font-size:16px;font-weight:700;color:#fff">{{ counter }}</span>
+              <span style="font-size:12.5px;font-weight:500;color:rgba(255,255,255,.55)">swipe to switch route</span>
+              <sc-if value="{{ showDots }}" hint-placeholder-val="{{ true }}">
+                <span style="margin-left:auto;display:flex;align-items:center;gap:5px">
+                  <sc-for list="{{ dots }}" as="dt" hint-placeholder-count="3"><span style="display:block;height:7px;border-radius:5px;transition:all .25s;width:{{ dt.w }}px;background:{{ dt.bg }}"></span></sc-for>
+                </span>
+              </sc-if>
+            </div>
+
+            <div ref="{{ swipeRef }}" style="touch-action:pan-y;user-select:none;-webkit-user-select:none">
+              <div ref="{{ cardZoneRef }}" style="overflow:hidden;margin:0 -26px;touch-action:pan-y;transition:height .32s cubic-bezier(.22,.61,.36,1);height:{{ trackWrapH }}">
+                <div ref="{{ trackRef }}" style="display:flex;align-items:flex-start;transform:{{ trackTf }};transition:{{ trackTr }}">
+                  <sc-for list="{{ routesV }}" as="r" hint-placeholder-count="1">
+                    <div style="flex:0 0 100%;min-width:0;padding:2px 26px 14px">
+                      <div style="border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(6,26,49,.46);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(3,16,34,.35);padding:16px 16px 18px">
+
+                        <div style="display:flex;align-items:center;gap:7px">
+                          <sc-if value="{{ r.showM }}" hint-placeholder-val="{{ true }}">
+                            <span style="height:22px;padding:0 9px;border-radius:5px;background:#F2890C;display:inline-flex;align-items:center;gap:5px"><svg width="13" height="13" sc-camel-view-box="0 0 18 18" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="6" r="2.8"></circle><path d="M3 16c1-3 3-4.5 6-4.5S14 13 15 16"></path></svg><span style="color:#fff;font-weight:700;font-size:12px;white-space:nowrap">{{ r.mLabel }}</span></span>
+                          </sc-if>
+                          <span style="height:22px;padding:0 9px;border-radius:5px;background:#34C759;display:inline-flex;align-items:center;gap:5px"><svg width="13" height="13" sc-camel-view-box="0 0 18 18" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 9s2.8-5 7.5-5 7.5 5 7.5 5-2.8 5-7.5 5S1.5 9 1.5 9z"></path><circle cx="9" cy="9" r="2.2"></circle></svg><span style="color:#fff;font-weight:700;font-size:12px">Visible</span></span>
+                          <span style="margin-left:auto;display:flex;gap:8px">
+                            <sc-if value="{{ editFilled }}" hint-placeholder-val="{{ true }}">
+                              <button sc-camel-on-click="{{ r.edit }}" title="Edit route" style="width:36px;height:36px;border-radius:11px;border:none;background:#1E70C4;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(30,112,196,.35)" style-hover="background:#2A7FD6"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.3 20.7l-4.6 1.6 1.6-4.6Z"></path><path d="m15 5 4 4"></path></svg></button>
+                              <button sc-camel-on-click="{{ r.del }}" title="Delete route" style="width:36px;height:36px;border-radius:11px;background:rgba(255,107,107,.14);border:1px solid rgba(255,107,107,.38);display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:rgba(255,107,107,.24)"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="#FF7A7A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></button>
+                            </sc-if>
+                            <sc-if value="{{ editSoft }}" hint-placeholder-val="{{ false }}">
+                              <button sc-camel-on-click="{{ r.edit }}" title="Edit route" style="width:40px;height:40px;border-radius:20px;border:none;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:rgba(255,255,255,.2)"><svg width="18" height="18" sc-camel-view-box="0 0 18 18" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11.4 3.3l3.3 3.3M12.6 2.1a1.5 1.5 0 0 1 2.1 2.1L6 12.9l-3.3.9.9-3.3z"></path></svg></button>
+                              <button sc-camel-on-click="{{ r.del }}" title="Delete route" style="width:40px;height:40px;border-radius:20px;border:none;background:rgba(255,107,107,.14);display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:rgba(255,107,107,.24)"><svg width="18" height="18" sc-camel-view-box="0 0 18 18" fill="none" stroke="#FF7A7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h12M7 5V3.6h4V5M4.7 5l.6 9a1 1 0 0 0 1 .95h5.4a1 1 0 0 0 1-.95l.6-9M7.4 8v4.2M10.6 8v4.2"></path></svg></button>
+                            </sc-if>
+                          </span>
+                        </div>
+
+                        <div style="height:52px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);padding:0 14px;display:flex;align-items:center;gap:11px;margin-top:14px">
+                          <div style="width:30px;height:30px;border-radius:15px;background:rgba(242,137,12,.16);display:flex;align-items:center;justify-content:center;flex:none"><svg width="16" height="16" sc-camel-view-box="0 0 18 18" fill="none" stroke="#F2890C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.2L9 3.4l6 4.8"></path><path d="M4.6 7.4V14.6h8.8V7.4"></path></svg></div>
+                          <div style="min-width:0;flex:1">
+                            <div style="font-size:11px;color:rgba(255,255,255,.8);line-height:1">Departure airport</div>
+                            <div style="font-weight:700;font-size:14px;color:#fff;margin-top:4px;line-height:1">{{ r.fromCity }} <span style="color:rgba(255,255,255,.6);font-weight:600">({{ r.fromCode }})</span></div>
+                          </div>
+                        </div>
+
+                        <div style="height:62px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);padding:0 16px;display:flex;align-items:center;gap:13px;margin-top:12px">
+                          <svg width="22" height="22" sc-camel-view-box="0 0 20 20" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M16 8.5c0 4.4-6 9-6 9s-6-4.6-6-9a6 6 0 0 1 12 0z"></path><circle cx="10" cy="8.3" r="2"></circle></svg>
+                          <div style="min-width:0">
+                            <div style="font-size:11px;color:rgba(255,255,255,.8);line-height:1">Arrival airport</div>
+                            <div style="font-weight:700;font-size:15px;color:#fff;margin-top:5px;line-height:1">{{ r.toCity }} <span style="color:rgba(255,255,255,.6);font-weight:600">({{ r.toCode }})</span></div>
+                          </div>
+                        </div>
+
+                        <div style="border-radius:12px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.06);overflow:hidden;margin-top:12px">
+                          <div style="display:flex;align-items:stretch">
+                            <div style="flex:1;min-width:0;padding:13px 14px;display:flex;flex-direction:column;gap:9px">
+                              <div style="display:flex;align-items:center;gap:7px"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M3.6 13.1l2 1.8 4.9.9 5.9 1.1a1.7 1.7 0 1 0 .6-3.4l-3.3-.6-3.4-5.3-1.7-.3 1.1 4.6-3.2-.6-1-2.2-1.4-.2z"></path></svg><span style="font-size:11.5px;font-weight:700;color:#FFB763;letter-spacing:.3px;text-transform:uppercase">Arrival</span></div>
+                              <div><div style="font-weight:700;font-size:15px;color:#fff;line-height:1.15">{{ r.arrDay }}</div><div style="font-weight:700;font-size:13px;color:#8EC6FF;margin-top:4px;line-height:1">{{ r.arrTime }}</div></div>
+                            </div>
+                            <div style="width:1px;background:rgba(255,255,255,.10);align-self:stretch;margin:10px 0"></div>
+                            <div style="flex:1;min-width:0;padding:13px 14px;display:flex;flex-direction:column;gap:9px">
+                              <div style="display:flex;align-items:center;gap:7px"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M3.8 14.7l2.6.7 4.8-1.3 5.9-1.6a1.7 1.7 0 1 0-.9-3.3l-3.3.9-5.4-3.3-1.7.5 3 3.7-3.2.9-1.7-1.7-1.3.4z"></path></svg><span style="font-size:11.5px;font-weight:700;color:#FFB763;letter-spacing:.3px;text-transform:uppercase">Departure</span></div>
+                              <div><div style="font-weight:700;font-size:15px;color:#fff;line-height:1.15">{{ r.depDay }}</div><div style="font-weight:700;font-size:13px;color:#8EC6FF;margin-top:4px;line-height:1">{{ r.depTime }}</div></div>
+                            </div>
+                          </div>
+                          <div style="border-top:1px solid rgba(255,255,255,.10);background:rgba(9,30,58,.35);padding:9px 14px;display:flex;align-items:center;gap:7px"><svg width="14" height="14" sc-camel-view-box="0 0 18 18" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6.5"></circle><path d="M9 5.4V9l2.4 1.6"></path></svg><span style="font-size:12.5px;font-weight:600;color:rgba(255,255,255,.7)">Stopover in {{ r.stay }} · {{ r.nightsLabel }}</span></div>
+                        </div>
+
+                        <div style="display:flex;align-items:center;gap:7px;margin:16px 0 10px">
+                          <svg width="15" height="15" sc-camel-view-box="0 0 18 18" fill="none" stroke="#34C759" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15.5S2.5 11.4 2.5 6.8A3.3 3.3 0 0 1 9 5.4a3.3 3.3 0 0 1 6.5 1.4c0 4.6-6.5 8.7-6.5 8.7z"></path></svg>
+                          <span style="font-weight:700;font-size:11.5px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.5px">Your plans in {{ r.stay }}</span>
+                        </div>
+                        <div style="display:flex;flex-wrap:wrap;gap:8px">
+                          <sc-for list="{{ r.plans }}" as="p" hint-placeholder-count="3">
+                            <span style="display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 13px;border-radius:100px;background:rgba(52,199,89,.16);border:1px solid rgba(52,199,89,.5)"><svg width="16" height="16" sc-camel-view-box="0 0 20 20" fill="none" stroke="#7EE79A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="{{ p.d }}"></path></svg><span style="font-weight:700;font-size:13px;color:#C8F2D2;line-height:1">{{ p.label }}</span></span>
+                          </sc-for>
+                        </div>
+                        <sc-if value="{{ r.hasNote }}" hint-placeholder-val="{{ false }}">
+                          <div style="display:flex;gap:9px;background:rgba(30,112,196,.16);border:1px solid rgba(126,178,229,.32);border-radius:12px;padding:11px 13px;margin-top:12px">
+                            <svg width="16" height="16" sc-camel-view-box="0 0 18 18" fill="none" stroke="#8EC6FF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><path d="M3.5 3.5h11v7l-3 3h-8z"></path><path d="M11.5 13.5v-3h3"></path><path d="M6 6.5h6M6 9h4"></path></svg>
+                            <span style="font-size:12.5px;line-height:1.5;color:rgba(255,255,255,.9);font-style:italic">{{ r.noteTxt }}</span>
+                          </div>
+                        </sc-if>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+
+              <div style="margin-top:14px">
+                <sc-if value="{{ hasCrew }}" hint-placeholder-val="{{ true }}">
+                  <div style="display:flex;align-items:center;gap:7px;margin:0 0 12px">
+                    <svg width="17" height="17" sc-camel-view-box="0 0 18 18" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="9" cy="6" r="2.8"></circle><path d="M3 16c1-3 3-4.5 6-4.5S14 13 15 16"></path></svg>
+                    <span style="font-size:14px;font-weight:700;color:#FFA53D">{{ crewLabel }}</span>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:12px">
+                    <sc-for list="{{ crew }}" as="m" hint-placeholder-count="2">
+                      <div style="border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(6,26,49,.46);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:14px;display:flex;flex-direction:column;gap:13px;box-shadow:0 8px 24px rgba(3,16,34,.3)">
+                        <div style="display:flex;gap:12px;align-items:center">
+                          <div style="position:relative;flex:none">
+                            <div style="width:50px;height:50px;border-radius:50%;overflow:hidden;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;color:#5B6B7D;font-weight:700;font-size:15px">
+                              <sc-if value="{{ m.hasPhoto }}" hint-placeholder-val="{{ false }}">{{ m.photoImg }}</sc-if>
+                              <sc-if value="{{ m.noPhoto }}" hint-placeholder-val="{{ true }}"><span>{{ m.initials }}</span></sc-if>
+                            </div>
+                            <div style="position:absolute;right:-1px;bottom:-1px;width:13px;height:13px;border-radius:7px;background:#34C759;border:2.5px solid #0E3055"></div>
+                          </div>
+                          <div style="flex:1;min-width:0">
+                            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+                              <div style="min-width:0">
+                                <div style="font-weight:700;font-size:14px;color:#fff;line-height:1.2">{{ m.nm }}</div>
+                                <div style="font-size:12px;color:rgba(255,255,255,.6);margin-top:5px">“{{ m.callsign }}”</div>
+                              </div>
+                              <div style="height:24px;padding:0 10px;border-radius:7px;background:#2B7FD4;display:inline-flex;align-items:center;flex:none"><span style="color:#fff;font-weight:700;font-size:13px;line-height:1">{{ m.role }}</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:6px">
+                          <svg width="15" height="15" sc-camel-view-box="0 0 18 18" fill="none" stroke="#8EC6FF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M14.25 7.5c0 4-5.25 8.25-5.25 8.25S3.75 11.5 3.75 7.5a5.25 5.25 0 0 1 10.5 0z"></path><circle cx="9" cy="7.5" r="1.6"></circle></svg>
+                          <span style="font-size:12.5px;font-weight:700;color:#fff">{{ m.meet }}</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px">
+                          <svg width="15" height="15" sc-camel-view-box="0 0 18 18" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="9" cy="9" r="6.5"></circle><path d="M9 5.5V9l2.4 1.6"></path></svg>
+                          <span style="font-size:11.5px;font-weight:700;color:#7EE79A;background:rgba(52,199,89,.16);border-radius:6px;padding:3px 9px">{{ m.dur }}</span>
+                        </div>
+                        <div>
+                          <div style="display:flex;justify-content:space-between;margin-bottom:6px">
+                            <span style="font-size:10.5px;font-weight:700;color:rgba(255,255,255,.8);white-space:nowrap">{{ m.t1 }}</span>
+                            <span style="font-size:10.5px;font-weight:700;color:rgba(255,255,255,.8);white-space:nowrap">{{ m.t2 }}</span>
+                          </div>
+                          <div style="position:relative;height:12px">
+                            <div style="position:absolute;inset:0;border-radius:6px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.08)"></div>
+                            <div style="position:absolute;top:0;bottom:0;border-radius:6px;background:#34C759;box-shadow:0 1px 6px rgba(52,199,89,.45);left:{{ m.l }}%;width:{{ m.w }}%"></div>
+                          </div>
+                        </div>
+                        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+                          <sc-for list="{{ m.ints }}" as="i" hint-placeholder-count="3">
+                            <sc-if value="{{ i.m }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;align-items:center;gap:5px;height:27px;padding:0 10px 0 8px;border-radius:100px;background:#34C759;border:1px solid #34C759"><svg width="13" height="13" sc-camel-view-box="0 0 14 14" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7.4l3 3 6-6.6"></path></svg><svg width="15" height="15" sc-camel-view-box="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="{{ i.d }}"></path></svg><span style="font-weight:700;font-size:11px;color:#fff;line-height:1">{{ i.label }}</span></span></sc-if>
+                            <sc-if value="{{ i.s }}" hint-placeholder-val="{{ true }}"><span style="display:inline-flex;align-items:center;gap:5px;height:27px;padding:0 10px;border-radius:100px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22)"><svg width="15" height="15" sc-camel-view-box="0 0 20 20" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="{{ i.d }}"></path></svg><span style="font-weight:700;font-size:11px;color:rgba(255,255,255,.78);line-height:1">{{ i.label }}</span></span></sc-if>
+                          </sc-for>
+                        </div>
+                        <sc-if value="{{ m.hasNote }}" hint-placeholder-val="{{ false }}">
+                          <div style="display:flex;gap:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:11px 13px">
+                            <svg width="16" height="16" sc-camel-view-box="0 0 18 18" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><path d="M3.5 3.5h11v7l-3 3h-8z"></path><path d="M11.5 13.5v-3h3"></path><path d="M6 6.5h6M6 9h4"></path></svg>
+                            <span style="font-size:12.5px;line-height:1.5;color:rgba(255,255,255,.85);font-style:italic">{{ m.noteTxt }}</span>
+                          </div>
+                        </sc-if>
+                        <button sc-camel-on-click="{{ m.msgTap }}" style="height:48px;border-radius:28px;background:#1E70C4;color:#fff;border:none;font-family:inherit;font-weight:700;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:0 6px 18px rgba(30,112,196,.4)" style-hover="background:#2A7FD6"><svg width="17" height="17" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"></path></svg>Message</button>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ noCrew }}" hint-placeholder-val="{{ false }}">
+                  <div style="border-radius:12px;background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.20);padding:20px 18px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+                    <div style="width:42px;height:42px;border-radius:21px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center"><svg width="20" height="20" sc-camel-view-box="0 0 18 18" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="6" r="2.8"></circle><path d="M3 16c1-3 3-4.5 6-4.5S14 13 15 16"></path></svg></div>
+                    <div style="font-weight:700;font-size:14px;color:#fff">No crew at this stop yet</div>
+                    <div style="font-size:12.5px;color:rgba(255,255,255,.6);line-height:1.5;max-width:260px">{{ noCrewTxt }}</div>
+                  </div>
+                </sc-if>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}">
+            <div style="text-align:center;padding:80px 20px 0">
+              <svg width="44" height="44" sc-camel-view-box="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block"><path d="M12 21.5s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"></path><circle cx="12" cy="10.5" r="2.4"></circle></svg>
+              <div style="font-size:16px;font-weight:700;color:#fff;margin-top:12px">No upcoming routes</div>
+              <div style="font-size:12.5px;font-weight:500;color:rgba(255,255,255,.6);margin-top:6px">Plan your next stopover to see who you'll cross paths with.</div>
+              <button sc-camel-on-click="{{ openNew }}" style="margin-top:18px;height:40px;padding:0 20px;border-radius:50px;background:#F2890C;color:#fff;border:none;font-family:inherit;font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 6px 16px rgba(242,137,12,.35)" style-hover="filter:brightness(1.06)">＋ New route</button>
+            </div>
+          </sc-if>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isCreate }}" hint-placeholder-val="{{ false }}">
+        <div data-screen-label="Create New Route" style="display:flex;flex-direction:column;gap:22px;animation:bmFade .25s ease">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;align-items:center;gap:13px">
+              <div style="width:38px;height:38px;border-radius:19px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.3);flex:none">
+                <img src="assets/logo.png" alt="" style="width:27px;height:27px;display:block;object-fit:contain">
+              </div>
+              <span style="font-weight:700;font-size:20px;color:#fff">{{ createTitle }}</span>
+            </div>
+            <span style="font-size:14px;color:rgba(255,255,255,.66);line-height:1.6">Create your trip — we'll find crew nearby.</span>
+          </div>
+          <div style="height:1px;background:rgba(255,255,255,.12)"></div>
+
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font-weight:700;font-size:13px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.5px">Your route</span>
+
+            <div style="position:relative">
+              <button sc-camel-on-click="{{ toggleFrom }}" style="width:100%;height:62px;border-radius:12px;background:rgba(255,255,255,.07);border:{{ fromBorder }};padding:0 16px;display:flex;align-items:center;gap:13px;cursor:pointer;font-family:inherit;box-shadow:{{ fromRing }};transition:box-shadow .15s">
+                <svg width="22" height="22" sc-camel-view-box="0 0 18 18" fill="none" stroke="#F2890C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M3 8.2L9 3.4l6 4.8"></path><path d="M4.6 7.4V14.6h8.8V7.4"></path></svg>
+                <span style="flex:1;text-align:left;min-width:0">
+                  <span style="display:block;font-size:11px;color:rgba(255,255,255,.8);line-height:1">Departure airport</span>
+                  <span style="display:block;font-weight:700;font-size:15px;color:#fff;margin-top:5px;line-height:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ fromCity }} <span style="color:rgba(255,255,255,.6);font-weight:600">({{ fromCode }})</span></span>
+                </span>
+                <svg width="18" height="18" sc-camel-view-box="0 0 18 18" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transform:{{ fromChev }};transition:transform .2s"><path d="M4.5 7l4.5 4 4.5-4"></path></svg>
+              </button>
+              <sc-if value="{{ fromOpen }}" hint-placeholder-val="{{ false }}">
+                <div style="position:absolute;top:100%;left:0;right:0;margin-top:8px;z-index:40;border-radius:12px;background:#0E2A4A;border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 44px rgba(2,12,28,.55);overflow:hidden">
+                  <sc-for list="{{ fromOpts }}" as="o" hint-placeholder-count="3">
+                    <button sc-camel-on-click="{{ o.tap }}" style="width:100%;text-align:left;padding:13px 16px;border:none;border-bottom:1px solid rgba(255,255,255,.08);background:{{ o.bg }};cursor:pointer;display:flex;align-items:center;gap:11px;font-family:inherit;font-size:14px;font-weight:{{ o.fw }};color:#fff" style-hover="background:rgba(255,255,255,.06)"><svg width="17" height="17" sc-camel-view-box="0 0 18 18" fill="none" stroke="{{ o.ic }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M3 8.2L9 3.4l6 4.8"></path><path d="M4.6 7.4V14.6h8.8V7.4"></path></svg>{{ o.city }} <span style="color:rgba(255,255,255,.55);font-weight:500">({{ o.code }})</span><sc-if value="{{ o.sel }}" hint-placeholder-val="{{ false }}"><span style="margin-left:auto"><svg width="15" height="15" sc-camel-view-box="0 0 14 14" fill="none" stroke="#F2890C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7.4l3 3 6-6.6"></path></svg></span></sc-if></button>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+
+            <div style="position:relative">
+              <button sc-camel-on-click="{{ toggleDest }}" style="width:100%;height:62px;border-radius:12px;background:rgba(255,255,255,.07);border:{{ destBorder }};padding:0 16px;display:flex;align-items:center;gap:13px;cursor:pointer;font-family:inherit;box-shadow:{{ destRing }};transition:box-shadow .15s">
+                <svg width="22" height="22" sc-camel-view-box="0 0 20 20" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M16 8.5c0 4.4-6 9-6 9s-6-4.6-6-9a6 6 0 0 1 12 0z"></path><circle cx="10" cy="8.3" r="2"></circle></svg>
+                <span style="flex:1;text-align:left;min-width:0">
+                  <span style="display:block;font-size:11px;color:rgba(255,255,255,.8);line-height:1">Arrival airport</span>
+                  <span style="display:block;font-weight:700;font-size:15px;color:{{ destColor }};margin-top:5px;line-height:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ destLabel }}</span>
+                </span>
+                <svg width="18" height="18" sc-camel-view-box="0 0 18 18" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transform:{{ destChev }};transition:transform .2s"><path d="M4.5 7l4.5 4 4.5-4"></path></svg>
+              </button>
+              <sc-if value="{{ destOpen }}" hint-placeholder-val="{{ false }}">
+                <div style="position:absolute;top:100%;left:0;right:0;margin-top:8px;z-index:40;border-radius:12px;background:#0E2A4A;border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 44px rgba(2,12,28,.55);overflow:hidden">
+                  <sc-for list="{{ destOpts }}" as="o" hint-placeholder-count="3">
+                    <button sc-camel-on-click="{{ o.tap }}" style="width:100%;text-align:left;padding:13px 16px;border:none;border-bottom:1px solid rgba(255,255,255,.08);background:{{ o.bg }};cursor:pointer;display:flex;align-items:center;gap:11px;font-family:inherit;font-size:14px;font-weight:{{ o.fw }};color:#fff" style-hover="background:rgba(255,255,255,.06)"><svg width="17" height="17" sc-camel-view-box="0 0 20 20" fill="none" stroke="{{ o.ic }}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M16 8.5c0 4.4-6 9-6 9s-6-4.6-6-9a6 6 0 0 1 12 0z"></path><circle cx="10" cy="8.3" r="2"></circle></svg>{{ o.city }} <span style="color:rgba(255,255,255,.55);font-weight:500">({{ o.code }})</span><sc-if value="{{ o.sel }}" hint-placeholder-val="{{ false }}"><span style="margin-left:auto"><svg width="15" height="15" sc-camel-view-box="0 0 14 14" fill="none" stroke="#F2890C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7.4l3 3 6-6.6"></path></svg></span></sc-if></button>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+
+            <div style="border-radius:12px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.06);overflow:hidden">
+              <div style="display:flex;align-items:stretch">
+                <button sc-camel-on-click="{{ openRange }}" style="flex:1;min-width:0;background:transparent;border:none;cursor:pointer;padding:13px 14px;text-align:left;display:flex;flex-direction:column;gap:9px;font-family:inherit">
+                  <span style="display:flex;align-items:center;gap:7px"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M3.6 13.1l2 1.8 4.9.9 5.9 1.1a1.7 1.7 0 1 0 .6-3.4l-3.3-.6-3.4-5.3-1.7-.3 1.1 4.6-3.2-.6-1-2.2-1.4-.2z"></path></svg><span style="font-size:11.5px;font-weight:700;color:#FFB763;letter-spacing:.3px;text-transform:uppercase">Arrival</span></span>
+                  <sc-if value="{{ cArrSet }}" hint-placeholder-val="{{ false }}"><span><span style="display:block;font-weight:700;font-size:15px;color:#fff;line-height:1.15">{{ cArrDayTxt }}</span><span style="display:block;font-weight:700;font-size:13px;color:#8EC6FF;margin-top:4px;line-height:1">{{ cArrTimeTxt }}</span></span></sc-if>
+                  <sc-if value="{{ cArrUnset }}" hint-placeholder-val="{{ true }}"><span style="font-weight:600;font-size:14px;color:rgba(255,255,255,.85)">Add date &amp; time</span></sc-if>
+                </button>
+                <div style="width:1px;background:rgba(255,255,255,.10);align-self:stretch;margin:10px 0"></div>
+                <button sc-camel-on-click="{{ openRange }}" style="flex:1;min-width:0;background:transparent;border:none;cursor:pointer;padding:13px 14px;text-align:left;display:flex;flex-direction:column;gap:9px;font-family:inherit">
+                  <span style="display:flex;align-items:center;gap:7px"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M3.8 14.7l2.6.7 4.8-1.3 5.9-1.6a1.7 1.7 0 1 0-.9-3.3l-3.3.9-5.4-3.3-1.7.5 3 3.7-3.2.9-1.7-1.7-1.3.4z"></path></svg><span style="font-size:11.5px;font-weight:700;color:#FFB763;letter-spacing:.3px;text-transform:uppercase">Departure</span></span>
+                  <sc-if value="{{ cDepSet }}" hint-placeholder-val="{{ false }}"><span><span style="display:block;font-weight:700;font-size:15px;color:#fff;line-height:1.15">{{ cDepDayTxt }}</span><span style="display:block;font-weight:700;font-size:13px;color:#8EC6FF;margin-top:4px;line-height:1">{{ cDepTimeTxt }}</span></span></sc-if>
+                  <sc-if value="{{ cDepUnset }}" hint-placeholder-val="{{ true }}"><span style="font-weight:600;font-size:14px;color:rgba(255,255,255,.85)">Add date &amp; time</span></sc-if>
+                </button>
+              </div>
+              <sc-if value="{{ cBoth }}" hint-placeholder-val="{{ false }}">
+                <div style="border-top:1px solid rgba(255,255,255,.10);background:rgba(9,30,58,.35);padding:9px 14px;display:flex;align-items:center;gap:7px"><svg width="14" height="14" sc-camel-view-box="0 0 18 18" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6.5"></circle><path d="M9 5.4V9l2.4 1.6"></path></svg><span style="font-size:12.5px;font-weight:600;color:rgba(255,255,255,.7)">{{ cStopLine }}</span></div>
+              </sc-if>
+            </div>
+          </div>
+
+          <div style="height:1px;background:rgba(255,255,255,.12)"></div>
+
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-weight:700;font-size:13px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.5px">Your plans</span>
+              <span style="font-size:12px;color:rgba(255,255,255,.5)">{{ plansHint }}</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:-4px">
+              <svg width="16" height="16" sc-camel-view-box="0 0 18 18" fill="none" stroke="#34C759" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15.5S2.5 11.4 2.5 6.8A3.3 3.3 0 0 1 9 5.4a3.3 3.3 0 0 1 6.5 1.4c0 4.6-6.5 8.7-6.5 8.7z"></path></svg>
+              <span style="font-size:13.5px;color:#fff;font-weight:600">{{ heartLine }}</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px">
+              <sc-for list="{{ cChips }}" as="c" hint-placeholder-count="9">
+                <button sc-camel-on-click="{{ c.tap }}" style="display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 15px;border-radius:100px;background:{{ c.bg }};border:1px solid {{ c.bd }};cursor:pointer;font-family:inherit;transition:background .15s,border-color .15s"><sc-if value="{{ c.sel }}" hint-placeholder-val="{{ false }}"><svg width="13" height="13" sc-camel-view-box="0 0 14 14" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7.4l3 3 6-6.6"></path></svg></sc-if><svg width="18" height="18" sc-camel-view-box="0 0 20 20" fill="none" stroke="{{ c.ic }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="{{ c.d }}"></path></svg><span style="font-weight:700;font-size:14px;color:{{ c.col }};line-height:1">{{ c.full }}</span></button>
+              </sc-for>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+              <label for="bm-notes" style="font-weight:700;font-size:12.5px;color:rgba(255,255,255,.6)">Additional plans</label>
+              <textarea id="bm-notes" value="{{ cNotes }}" sc-camel-on-change="{{ onNotes }}" rows="3" placeholder="Anything specific in mind? e.g. sunset run along the water, catch a football match, find a good ramen spot…" style="width:100%;resize:none;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);padding:12px 14px;font-family:inherit;font-size:13.5px;line-height:1.5;color:#fff"></textarea>
+            </div>
+          </div>
+
+          <div style="height:1px;background:rgba(255,255,255,.12)"></div>
+
+          <div sc-camel-on-click="{{ toggleVis }}" style="cursor:pointer;border-radius:12px;background:{{ visBg }};border:1px solid {{ visBd }};padding:14px 18px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;transition:background .2s,border-color .2s">
+            <div style="min-width:0">
+              <div style="font-weight:700;font-size:14px;color:#fff">Make route visible</div>
+              <div style="font-size:12px;color:rgba(255,255,255,.6);margin-top:6px;line-height:1.4">Let crew at this stop discover you in the planner</div>
+            </div>
+            <div style="width:30px;height:18px;border-radius:100px;background:{{ visSw }};position:relative;flex:none;margin-top:2px;transition:background .2s">
+              <div style="position:absolute;top:1px;left:{{ visKnob }}px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .2s"></div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:14px;margin-top:2px">
+            <button sc-camel-on-click="{{ backTap }}" style="flex:1;height:48px;border-radius:50px;background:transparent;border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.85);font-family:inherit;font-weight:700;font-size:14px;cursor:pointer" style-hover="background:rgba(255,255,255,.08)">Back</button>
+            <button sc-camel-on-click="{{ submitTap }}" style="flex:1.4;height:48px;border-radius:50px;background:{{ ctaBg }};color:{{ ctaCol }};border:none;font-family:inherit;font-weight:700;font-size:14px;cursor:{{ ctaCur }};box-shadow:{{ ctaSh }};transition:background .2s">{{ createCta }}</button>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:0 16px 18px;pointer-events:none;z-index:20">
+      <div style="pointer-events:auto;display:flex;align-items:center;gap:4px;padding:9px 8px;border-radius:30px;background:rgba(7,24,46,.66);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border:1px solid rgba(255,255,255,.16);box-shadow:0 14px 36px rgba(2,10,24,.45), inset 0 1px 0 rgba(255,255,255,.12)">
+        <div sc-camel-on-click="{{ tapDiscover }}" style="flex:1;display:flex;justify-content:center;cursor:pointer">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:7px 18px;border-radius:26px">
+            <svg width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5l4 4"></path></svg>
+            <span style="font-size:11px;color:rgba(255,255,255,.6);font-weight:500;line-height:1">Discover</span>
+          </div>
+        </div>
+        <div style="flex:1;display:flex;justify-content:center;cursor:pointer">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:7px 18px;border-radius:26px;background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.08));box-shadow:inset 0 1px 0 rgba(255,255,255,.22)">
+            <span style="position:relative;width:24px;height:24px;display:inline-block">
+              <svg width="24" height="24" sc-camel-view-box="0 0 24 24"><path d="M12 21.5s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z" fill="#fff"></path><circle cx="12" cy="10.5" r="2.4" fill="#0C4D93"></circle></svg>
+              <span style="position:absolute;top:-4px;right:-7px;min-width:15px;height:15px;border-radius:8px;background:#F2890C;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 4px;line-height:1;border:1.5px solid rgba(10,30,56,.9)">1</span>
+            </span>
+            <span style="font-size:11px;color:#fff;font-weight:700;line-height:1">Routes</span>
+          </div>
+        </div>
+        <div sc-camel-on-click="{{ tapMessages }}" style="flex:1;display:flex;justify-content:center;cursor:pointer">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:7px 18px;border-radius:26px">
+            <span style="position:relative;width:24px;height:24px;display:inline-block">
+              <svg width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3.5 20.5l1.45-5.1A8.5 8.5 0 1 1 21 11.5z"></path></svg>
+              <span style="position:absolute;top:-4px;right:-7px;min-width:15px;height:15px;border-radius:8px;background:#F2890C;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 4px;line-height:1;border:1.5px solid rgba(10,30,56,.9)">9</span>
+            </span>
+            <span style="font-size:11px;color:rgba(255,255,255,.6);font-weight:500;line-height:1">Messages</span>
+          </div>
+        </div>
+        <div sc-camel-on-click="{{ tapProfile }}" style="flex:1;display:flex;justify-content:center;cursor:pointer">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:7px 18px;border-radius:26px">
+            <svg width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="4"></circle><path d="M4.5 20.5c1.3-4 4.2-6 7.5-6s6.2 2 7.5 6"></path></svg>
+            <span style="font-size:11px;color:rgba(255,255,255,.6);font-weight:500;line-height:1">Profile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;left:50%;bottom:104px;transform:translate(-50%,0);background:#fff;color:#0B2545;font-size:12.5px;font-weight:600;border-radius:12px;padding:10px 16px;box-shadow:0 8px 24px rgba(0,0,0,.4);z-index:50;animation:bmToast .25s ease;max-width:86%;text-align:center">{{ toastMsg }}</div>
+    </sc-if>
+
+    <sc-if value="{{ confirmOpen }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Delete confirm" sc-camel-on-click="{{ cancelDel }}" style="position:absolute;inset:0;background:rgba(4,14,28,.6);z-index:60;display:flex;align-items:center;justify-content:center;animation:bmFade .2s ease">
+        <div sc-camel-on-click="{{ stopProp }}" style="width:300px;background:#0E2A4A;border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:20px;text-align:center;box-shadow:0 18px 48px rgba(0,0,0,.45)">
+          <div style="width:46px;height:46px;border-radius:23px;background:rgba(255,107,107,.16);display:flex;align-items:center;justify-content:center;margin:0 auto"><svg width="20" height="20" sc-camel-view-box="0 0 18 18" fill="none" stroke="#FF7A7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h12M7 5V3.6h4V5M4.7 5l.6 9a1 1 0 0 0 1 .95h5.4a1 1 0 0 0 1-.95l.6-9M7.4 8v4.2M10.6 8v4.2"></path></svg></div>
+          <div style="font-size:16px;font-weight:700;color:#fff;margin-top:12px">Delete this route?</div>
+          <div style="font-size:12.5px;font-weight:500;color:rgba(255,255,255,.6);margin-top:6px">{{ delName }} will be removed from your planner.</div>
+          <div style="display:flex;gap:10px;margin-top:16px">
+            <button sc-camel-on-click="{{ cancelDel }}" style="flex:1;border:1px solid rgba(255,255,255,.22);background:transparent;color:rgba(255,255,255,.85);font-size:13px;font-weight:700;border-radius:50px;padding:11px 0;cursor:pointer;font-family:inherit" style-hover="background:rgba(255,255,255,.08)">Cancel</button>
+            <button sc-camel-on-click="{{ confirmDelete }}" style="flex:1;border:none;background:#E5484D;color:#fff;font-size:13px;font-weight:700;border-radius:50px;padding:11px 0;cursor:pointer;font-family:inherit" style-hover="background:#D13B40">Delete</button>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ sheetOpen }}" hint-placeholder-val="{{ false }}">
+      <div sc-camel-on-click="{{ closeSheet }}" style="position:absolute;inset:0;background:rgba(4,14,28,.6);z-index:70;animation:bmFade .2s ease"></div>
+      <div data-screen-label="Date range sheet" style="position:absolute;left:0;right:0;bottom:0;background:#0C2440;border:1px solid rgba(255,255,255,.12);border-bottom:none;border-radius:26px 26px 0 0;padding:14px 20px 22px;z-index:71;animation:bmSheetUp .32s cubic-bezier(.22,.61,.36,1);box-shadow:0 -12px 40px rgba(2,10,24,.6)">
+        <div style="width:44px;height:5px;border-radius:4px;background:rgba(255,255,255,.25);margin:0 auto 14px"></div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="font-size:17px;font-weight:700;color:#fff">Stopover dates</div>
+          <button sc-camel-on-click="{{ closeSheet }}" style="margin-left:auto;width:30px;height:30px;border-radius:50%;border:none;background:rgba(255,255,255,.10);color:rgba(255,255,255,.75);font-size:14px;font-weight:700;cursor:pointer;font-family:inherit" style-hover="background:rgba(255,255,255,.18)">✕</button>
+        </div>
+        <div style="font-size:12.5px;font-weight:500;color:rgba(255,255,255,.6);margin-top:3px">{{ sheetRoute }}</div>
+        <div style="background:rgba(30,112,196,.2);border:1px solid rgba(126,178,229,.3);border-radius:12px;padding:10px 12px;font-size:11.5px;font-weight:600;color:#BFDCFF;margin-top:12px;line-height:1.45">One-tap range: first tap sets the <b style="font-weight:700;color:#fff">arrival</b>, second tap the <b style="font-weight:700;color:#fff">departure</b> — no closing the calendar in between.</div>
+        <div style="font-size:14px;font-weight:700;color:#fff;text-align:center;margin-top:14px">June 2026</div>
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:10px">
+          <sc-for list="{{ wdays }}" as="w" hint-placeholder-count="7"><div style="text-align:center;font-size:10.5px;font-weight:700;color:rgba(255,255,255,.45);text-transform:uppercase;padding:2px 0">{{ w }}</div></sc-for>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:4px">
+          <sc-for list="{{ days }}" as="d" hint-placeholder-count="30">
+            <button sc-camel-on-click="{{ d.tap }}" style="height:38px;border:none;cursor:pointer;font-family:inherit;font-size:13px;display:flex;align-items:center;justify-content:center;background:{{ d.bg }};color:{{ d.col }};font-weight:{{ d.fw }};border-radius:{{ d.rad }}">{{ d.n }}</button>
+          </sc-for>
+        </div>
+        <div style="text-align:center;font-size:12px;font-weight:700;color:#7EE79A;margin-top:10px;min-height:16px">{{ rangeLabel }}</div>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <div style="flex:1;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);padding:10px 12px">
+            <div style="display:flex;align-items:center;gap:6px"><svg width="14" height="14" sc-camel-view-box="0 0 24 24" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M3.6 13.1l2 1.8 4.9.9 5.9 1.1a1.7 1.7 0 1 0 .6-3.4l-3.3-.6-3.4-5.3-1.7-.3 1.1 4.6-3.2-.6-1-2.2-1.4-.2z"></path></svg><span style="font-size:11px;font-weight:700;color:#FFB763;letter-spacing:.3px;text-transform:uppercase">Arrival time</span></div>
+            <input type="time" sc-camel-default-value="{{ selArrT }}" sc-camel-on-input="{{ onArrT }}" sc-camel-on-change="{{ onArrT }}" style="margin-top:7px;width:100%;border:none;background:transparent;font-family:inherit;font-weight:700;font-size:16px;color:#fff;padding:0;outline:none">
+          </div>
+          <div style="flex:1;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);padding:10px 12px">
+            <div style="display:flex;align-items:center;gap:6px"><svg width="14" height="14" sc-camel-view-box="0 0 24 24" fill="none" stroke="#F2890C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M3.8 14.7l2.6.7 4.8-1.3 5.9-1.6a1.7 1.7 0 1 0-.9-3.3l-3.3.9-5.4-3.3-1.7.5 3 3.7-3.2.9-1.7-1.7-1.3.4z"></path></svg><span style="font-size:11px;font-weight:700;color:#FFB763;letter-spacing:.3px;text-transform:uppercase">Departure time</span></div>
+            <input type="time" sc-camel-default-value="{{ selDepT }}" sc-camel-on-input="{{ onDepT }}" sc-camel-on-change="{{ onDepT }}" style="margin-top:7px;width:100%;border:none;background:transparent;font-family:inherit;font-weight:700;font-size:16px;color:#fff;padding:0;outline:none">
+          </div>
+        </div>
+        <button sc-camel-on-click="{{ saveDates }}" style="margin-top:10px;width:100%;border:none;font-size:14px;font-weight:700;border-radius:50px;padding:13px 0;cursor:pointer;font-family:inherit;transition:background .2s;background:{{ saveBg }};color:{{ saveCol }};box-shadow:{{ saveSh }}">{{ saveLabel }}</button>
+      </div>
+    </sc-if>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{
+  &quot;showDots&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Pager&quot; },
+  &quot;swipeZone&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;everywhere&quot;, &quot;card-only&quot;], &quot;default&quot;: &quot;everywhere&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Pager&quot; },
+  &quot;editButtonStyle&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;filled&quot;, &quot;soft&quot;], &quot;default&quot;: &quot;filled&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Route card&quot; }
+}">
+class Component extends DCLogic {
+  screenEl = React.createRef();
+  trackEl = React.createRef();
+  swipeEl = React.createRef();
+  cardZoneEl = React.createRef();
+
+  PLANS = {
+    food:        { label: 'Food & Drinks', full: 'Food & Drinks', d: 'M6 3v14M4.5 3v3.5a1.5 1.5 0 0 0 3 0V3M13.5 3c-1.3 0-2 1.4-2 3.8s.7 3.8 2 3.8V17' },
+    nightlife:   { label: 'Nightlife', full: 'Nightlife', d: 'M4 5h12l-6 6zM10 11v5M7 16.5h6' },
+    beach:       { label: 'Beach / Pool', full: 'Beach / Pool', d: 'M10 3.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6M10 1.5V2.8M3.6 6.6H4.9M15.1 6.6h1.3M5.4 2.4l.9.9M13.7 2.4l-.9.9M3 15.4c1.2 0 1.2 1 2.3 1s1.2-1 2.4-1 1.2 1 2.3 1 1.2-1 2.4-1 1.2 1 2.3 1' },
+    sightseeing: { label: 'Sightseeing', full: 'Local Sightseeing', d: 'M4 17h12M5 17V8l5-3.6 5 3.6v9M8.5 17v-4h3v4' },
+    shopping:    { label: 'Shopping', full: 'Shopping', d: 'M5 6.5h10l-1 10.5H6zM7.5 6.5V5.4a2.5 2.5 0 0 1 5 0v1.1' },
+    gym:         { label: 'Gym', full: 'Gym / Fitness', d: 'M3 7.4v5.2M5.2 5.8v8.4M14.8 5.8v8.4M17 7.4v5.2M5.2 10h9.6' },
+    spa:         { label: 'Spa', full: 'Massage & Spa / Beauty', d: 'M4.6 9c3-.5 5 1 5.4 4.6C7.2 13.2 5.2 11.6 4.6 9zM15.4 9c-3-.5-5 1-5.4 4.6C12.8 13.2 14.8 11.6 15.4 9zM10 13.6V17' },
+    car:         { label: 'Rent a Car', full: 'Rent a Car / Roundtrip', d: 'M3.5 13v-2l1.8-4h9.4l1.8 4v2M3.5 13h13v2.2h-13zM6.6 14a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4M13.4 14a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4' },
+    other:       { label: 'Others', full: 'Others', d: 'M10 3.6a6.4 6.4 0 1 0 0 12.8 6.4 6.4 0 0 0 0-12.8M10 7.2v5.6M7.2 10h5.6' }
+  };
+  HOME_AIRPORTS = [
+    { city: 'Zurich', code: 'ZRH' }, { city: 'Geneva', code: 'GVA' }, { city: 'Vienna', code: 'VIE' },
+    { city: 'Munich', code: 'MUC' }, { city: 'Frankfurt', code: 'FRA' }, { city: 'Amsterdam', code: 'AMS' }, { city: 'London', code: 'LHR' }
+  ];
+  DEST_AIRPORTS = [
+    { city: 'Istanbul', code: 'IST' }, { city: 'Dubai', code: 'DXB' }, { city: 'Doha', code: 'DOH' },
+    { city: 'Frankfurt', code: 'FRA' }, { city: 'Amsterdam', code: 'AMS' }, { city: 'Munich', code: 'MUC' }, { city: 'Barcelona', code: 'BCN' }
+  ];
+
+  constructor(props) {
+    super(props);
+    const H = (d, h, m = 0) => new Date(2026, 5, d, h, m).getTime();
+    this.state = {
+      view: 'planner', idx: 0, drag: 0, dragging: false, trackH: null,
+      routes: [
+        { id: 'ist', from: { code: 'ZRH', city: 'Zurich' }, to: { code: 'IST', city: 'Istanbul' },
+          arr: H(10, 14, 30), dep: H(12, 18, 0), plans: ['food', 'sightseeing', 'spa'], visible: true,
+          notes: 'Looking for a dinner buddy on the first night — love rooftop spots with a view.',
+          crew: [
+            { name: 'David Kim', role: 'Pilot', avatar: 'assets/james.png', callsign: 'Tailwind', overlap: { start: H(10, 16, 0), end: H(11, 12, 0) }, interests: ['sightseeing', 'food', 'nightlife'], shared: ['sightseeing', 'food'], note: 'Free the whole first evening — up for a Bosphorus walk and street food crawl.' },
+            { name: 'Maria Santos', role: 'F/A', avatar: 'assets/maria.png', callsign: 'Cloud Dancer', overlap: { start: H(11, 9, 0), end: H(12, 18, 0) }, interests: ['gym', 'food', 'beach', 'sightseeing'], shared: ['food', 'sightseeing'] },
+            { name: 'James Cooper', role: 'Pilot', avatar: 'assets/james.png', callsign: 'Jet Stream', overlap: { start: H(10, 14, 30), end: H(10, 22, 0) }, interests: ['spa', 'car'], shared: ['spa'], note: 'Booked a hammam at 6pm — room for one more if you want to join.' },
+            { name: 'Lena Vogt', role: 'Purser', initials: 'LV', callsign: 'Northern Light', overlap: { start: H(12, 8, 0), end: H(12, 18, 0) }, interests: ['sightseeing', 'spa', 'shopping'], shared: ['sightseeing', 'spa'] }
+          ] },
+        { id: 'mxp', from: { code: 'ZRH', city: 'Zurich' }, to: { code: 'MXP', city: 'Milan' },
+          arr: H(18, 11, 0), dep: H(20, 9, 30), plans: ['food', 'shopping', 'sightseeing'], visible: true,
+          notes: 'First time in Milan — keen to find the best aperitivo and a proper Duomo rooftop visit.', crew: [] },
+        { id: 'mia', from: { code: 'ZRH', city: 'Zurich' }, to: { code: 'MIA', city: 'Miami' },
+          arr: H(24, 15, 45), dep: H(27, 13, 0), plans: ['beach', 'nightlife', 'food'], visible: true,
+          notes: 'Want a beach day + a night out. Anyone renting a car for a Keys day trip?',
+          crew: [
+            { name: 'Sofia Rossi', role: 'F/A', avatar: 'assets/maria.png', callsign: 'Sunbeam', overlap: { start: H(24, 18, 0), end: H(26, 10, 0) }, interests: ['beach', 'nightlife', 'spa'], shared: ['beach', 'nightlife'], note: 'Down for South Beach in the day and drinks in Wynwood after. Bringing a crew of 3.' },
+            { name: 'Tom Becker', role: 'Pilot', avatar: 'assets/james.png', callsign: 'Riptide', overlap: { start: H(25, 9, 0), end: H(27, 13, 0) }, interests: ['food', 'gym', 'beach'], shared: ['food', 'beach'], note: 'Renting a convertible Fri — happy to do a Keys road trip if anyone\u2019s in.' }
+          ] }
+      ],
+      confirmDel: null, toast: null,
+      cMode: 'new', cEditId: null, cFrom: { code: 'ZRH', city: 'Zurich' }, cDest: null,
+      cArr: null, cDep: null, cPicks: [], cNotes: '', cVisible: true, pickerOpen: null,
+      sheetOpen: false, selStart: null, selEnd: null, selArrT: '14:30', selDepT: '18:00'
+    };
+  }
+
+  A(p) {
+    const ids = { 'assets/logo.png': 'logo', 'assets/james.png': 'james', 'assets/maria.png': 'maria' };
+    const r = (typeof window !== 'undefined') && window.__resources;
+    return (r && ids[p] && r[ids[p]]) || p;
+  }
+  MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  fmtDT(t) { const d = new Date(t); let h = d.getHours(); const ap = h < 12 ? 'AM' : 'PM'; h = h % 12 || 12; return this.MON[d.getMonth()] + ' ' + d.getDate() + ', ' + h + ':' + String(d.getMinutes()).padStart(2, '0') + ' ' + ap; }
+  fmtDTc(t) { const d = new Date(t); return this.DOW[d.getDay()] + ', ' + this.MON[d.getMonth()] + ' ' + d.getDate(); }
+  fmtTime(t) { const d = new Date(t); return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); }
+  fmtDur(a, b) { let m = Math.round((b - a) / 60000); const d = Math.floor(m / 1440); m -= d * 1440; const h = Math.floor(m / 60); m -= h * 60; return (d ? d + 'd ' : '') + h + 'h' + (!d && m ? ' ' + m + 'm' : ''); }
+  nightsTxt(a, b) { const n = Math.max(0, Math.round((new Date(new Date(b).toDateString()) - new Date(new Date(a).toDateString())) / 86400000)); return n === 0 ? 'Same day' : n + ' ' + (n === 1 ? 'night' : 'nights'); }
+
+  componentDidMount() {
+    this._kb = (e) => {
+      if (this.state.view !== 'planner' || this.state.sheetOpen || this.state.confirmDel) return;
+      if (e.key === 'ArrowRight') this.go(this.state.idx + 1);
+      else if (e.key === 'ArrowLeft') this.go(this.state.idx - 1);
+    };
+    window.addEventListener('keydown', this._kb);
+    this._ro = (typeof ResizeObserver !== 'undefined') ? new ResizeObserver(() => this.measure()) : null;
+    this._obsCount = -1;
+    this.measure();
+    this.attachSwipe();
+  }
+  componentDidUpdate() { this.measure(); this.attachSwipe(); }
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this._kb);
+    if (this._ro) this._ro.disconnect();
+    clearTimeout(this._tt);
+  }
+
+  measure() {
+    const track = this.trackEl.current;
+    if (!track) { if (this.state.trackH != null) this.setState({ trackH: null }); return; }
+    const kids = track.children;
+    if (this._ro && kids.length !== this._obsCount) {
+      this._ro.disconnect();
+      for (const k of kids) this._ro.observe(k);
+      this._obsCount = kids.length;
+    }
+    const active = kids[this.state.idx];
+    if (!active) return;
+    const h = active.offsetHeight;
+    if (h > 0 && Math.abs(h - (this.state.trackH || 0)) > 0.5) this.setState({ trackH: h });
+  }
+
+  attachSwipe() {
+    const el = this.swipeEl.current;
+    if (!el || el === this._swipeNode) return;
+    this._swipeNode = el;
+    const opts = { passive: false };
+    if (typeof window.PointerEvent !== 'undefined') {
+      el.addEventListener('pointerdown', (e) => { if (e.pointerType === 'mouse' && e.button !== 0) return; this.dragBegin(e.clientX, e.clientY, e.target); }, opts);
+      el.addEventListener('pointermove', (e) => this.dragMove(e.clientX, e.clientY, e), opts);
+      el.addEventListener('pointerup', () => this.dragEnd(), opts);
+      el.addEventListener('pointercancel', () => this.dragEnd(), opts);
+    } else {
+      el.addEventListener('touchstart', (e) => { const t = e.touches[0]; if (t) this.dragBegin(t.clientX, t.clientY, e.target); }, opts);
+      el.addEventListener('touchmove', (e) => { const t = e.touches[0]; if (t) this.dragMove(t.clientX, t.clientY, e); }, opts);
+      el.addEventListener('touchend', () => this.dragEnd(), opts);
+      el.addEventListener('touchcancel', () => this.dragEnd(), opts);
+    }
+  }
+  dragBegin(x, y, target) {
+    if (this.state.view !== 'planner' || this.state.sheetOpen || this.state.confirmDel) return;
+    if ((this.props.swipeZone ?? 'everywhere') === 'card-only') {
+      const cz = this.cardZoneEl.current;
+      if (cz && target && !cz.contains(target)) return;
+    }
+    this._cand = true; this._dragOn = false;
+    this._px = x; this._py = y;
+  }
+  dragMove(x, y, e) {
+    if (!this._cand) return;
+    const dx = x - this._px, dy = y - this._py;
+    if (!this._dragOn) {
+      if (Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy) + 4) {
+        this._dragOn = true;
+        if (e && e.pointerId != null && this.swipeEl.current) { try { this.swipeEl.current.setPointerCapture(e.pointerId); } catch (err) {} }
+        this.setState({ dragging: true });
+      } else if (Math.abs(dy) > 14) { this._cand = false; }
+    }
+    if (this._dragOn) {
+      if (e && e.cancelable) e.preventDefault();
+      let d = dx;
+      const { idx, routes } = this.state;
+      if ((idx === 0 && d > 0) || (idx === routes.length - 1 && d < 0)) d *= 0.35;
+      this.setState({ drag: d });
+    }
+  }
+  dragEnd() {
+    if (this._dragOn) {
+      const d = this.state.drag, { idx } = this.state;
+      if (d < -70) this.go(idx + 1);
+      else if (d > 70) this.go(idx - 1);
+    }
+    this._cand = false; this._dragOn = false;
+    if (this.state.dragging || this.state.drag !== 0) this.setState({ dragging: false, drag: 0 });
+  }
+  go(i) {
+    const n = this.state.routes.length;
+    if (!n) return;
+    const j = Math.max(0, Math.min(n - 1, i));
+    if (j !== this.state.idx) {
+      this.setState({ idx: j });
+      const el = this.screenEl.current;
+      if (el && el.scrollTop > 120) el.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+  showToast(m) {
+    clearTimeout(this._tt);
+    this.setState({ toast: m });
+    this._tt = setTimeout(() => this.setState({ toast: null }), 2400);
+  }
+  scrollTop() { const el = this.screenEl.current; if (el) el.scrollTo({ top: 0 }); }
+
+  openCreate(mode, id) {
+    let st = { view: 'create', cMode: mode, cEditId: id || null, pickerOpen: null, sheetOpen: false };
+    if (mode === 'edit') {
+      const r = this.state.routes.find((x) => x.id === id);
+      if (r) Object.assign(st, { cFrom: r.from, cDest: r.to, cArr: r.arr, cDep: r.dep, cPicks: [...r.plans], cNotes: r.notes || '', cVisible: r.visible !== false });
+    } else {
+      Object.assign(st, { cFrom: { code: 'ZRH', city: 'Zurich' }, cDest: null, cArr: null, cDep: null, cPicks: [], cNotes: '', cVisible: true });
+    }
+    this.setState(st, () => this.scrollTop());
+  }
+  closeCreate = () => { this.setState({ view: 'planner', pickerOpen: null, sheetOpen: false }, () => this.scrollTop()); };
+  submitCreate = () => {
+    const { cMode, cEditId, cFrom, cDest, cArr, cDep, cPicks, cNotes, cVisible, routes } = this.state;
+    if (!cDest || cArr == null || cDep == null) return;
+    if (cMode === 'edit') {
+      const next = routes.map((r) => r.id === cEditId ? Object.assign({}, r, { from: cFrom, to: cDest, arr: cArr, dep: cDep, plans: [...cPicks], notes: cNotes.trim(), visible: cVisible }) : r);
+      this.setState({ routes: next, view: 'planner' }, () => this.scrollTop());
+      this.showToast('Route updated');
+    } else {
+      const route = { id: 'u' + Date.now(), from: cFrom, to: cDest, arr: cArr, dep: cDep, plans: [...cPicks], notes: cNotes.trim(), visible: cVisible, crew: [] };
+      const next = [...routes, route];
+      this.setState({ routes: next, view: 'planner', idx: next.length - 1 }, () => this.scrollTop());
+      this.showToast('Route created — we\u2019ll look for crew at ' + cDest.code);
+    }
+  };
+  togglePicker(which) { this.setState({ pickerOpen: this.state.pickerOpen === which ? null : which }); }
+  pickAirport(which, o) {
+    const st = { pickerOpen: null };
+    st[which === 'from' ? 'cFrom' : 'cDest'] = o;
+    this.setState(st);
+  }
+  togglePick(k) { const p = this.state.cPicks; this.setState({ cPicks: p.includes(k) ? p.filter((x) => x !== k) : [...p, k] }); }
+  onNotes = (e) => this.setState({ cNotes: e.target.value });
+  toggleVis = () => this.setState({ cVisible: !this.state.cVisible });
+
+  openRange = () => {
+    const { cArr, cDep } = this.state;
+    const t = (v, dflt) => { if (v == null) return dflt; const d = new Date(v); return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); };
+    this.setState({ sheetOpen: true, pickerOpen: null, selStart: cArr != null ? new Date(cArr).getDate() : null, selEnd: cDep != null ? new Date(cDep).getDate() : null, selArrT: t(cArr, '14:30'), selDepT: t(cDep, '18:00') });
+  };
+  onArrT = (e) => this.setState({ selArrT: e.target.value || '14:30' });
+  onDepT = (e) => this.setState({ selDepT: e.target.value || '18:00' });
+  closeSheet = () => this.setState({ sheetOpen: false });
+  stopProp = (e) => e.stopPropagation();
+  dayTap(d) {
+    const { selStart: s, selEnd: e2 } = this.state;
+    if (s == null || (s != null && e2 != null)) this.setState({ selStart: d, selEnd: null });
+    else if (d > s) this.setState({ selEnd: d });
+    else if (d < s) this.setState({ selStart: d });
+  }
+  saveDates = () => {
+    const { selStart: s, selEnd: e2, selArrT, selDepT } = this.state;
+    if (s == null || e2 == null) return;
+    const mk = (day, hm) => { const p = (hm || '00:00').split(':'); return new Date(2026, 5, day, +p[0] || 0, +p[1] || 0).getTime(); };
+    this.setState({ cArr: mk(s, selArrT), cDep: mk(e2, selDepT), sheetOpen: false });
+  };
+
+  askDel(id) { this.setState({ confirmDel: id }); }
+  cancelDel = () => this.setState({ confirmDel: null });
+  confirmDelete = () => {
+    const id = this.state.confirmDel;
+    const routes = this.state.routes.filter((r) => r.id !== id);
+    const idx = Math.min(this.state.idx, Math.max(0, routes.length - 1));
+    this.setState({ routes, idx, confirmDel: null });
+    this.showToast('Route deleted');
+  };
+
+  renderVals() {
+    const showDots = this.props.showDots ?? true;
+    const eb = this.props.editButtonStyle ?? 'filled';
+    const s = this.state;
+    const n = s.routes.length;
+    const cur = s.routes[s.idx] || null;
+
+    const routesV = s.routes.map((r) => ({
+      showM: r.crew.length > 0,
+      mLabel: r.crew.length + ' match' + (r.crew.length === 1 ? '' : 'es'),
+      fromCity: r.from.city, fromCode: r.from.code, toCity: r.to.city, toCode: r.to.code,
+      arrDay: this.fmtDTc(r.arr), arrTime: this.fmtTime(r.arr), depDay: this.fmtDTc(r.dep), depTime: this.fmtTime(r.dep),
+      stay: r.to.city, nightsLabel: this.nightsTxt(r.arr, r.dep),
+      plans: r.plans.map((k) => ({ label: this.PLANS[k].label, d: this.PLANS[k].d })),
+      hasNote: !!r.notes, noteTxt: r.notes || '',
+      edit: () => this.openCreate('edit', r.id),
+      del: () => this.askDel(r.id)
+    }));
+
+    const frac = (t, r) => Math.min(1, Math.max(0, (t - r.arr) / (r.dep - r.arr)));
+    const crew = cur ? cur.crew.map((m) => {
+      const l = frac(m.overlap.start, cur) * 100, rgt = frac(m.overlap.end, cur) * 100;
+      const matched = m.interests.filter((k) => m.shared.includes(k));
+      const rest = m.interests.filter((k) => !m.shared.includes(k));
+      return {
+        nm: m.name, callsign: m.callsign, role: m.role,
+        hasPhoto: !!m.avatar, noPhoto: !m.avatar,
+        photoImg: m.avatar ? React.createElement('img', { src: this.A(m.avatar), alt: '', style: { width: '100%', height: '100%', objectFit: 'cover' } }) : null,
+        initials: m.initials || '',
+        meet: 'Meet in ' + cur.to.city + ' (' + cur.to.code + ')',
+        dur: this.fmtDur(m.overlap.start, m.overlap.end) + ' together',
+        t1: this.fmtDT(m.overlap.start), t2: this.fmtDT(m.overlap.end),
+        l: l.toFixed(2), w: Math.max(2, rgt - l).toFixed(2),
+        ints: [...matched, ...rest].map((k) => ({ label: this.PLANS[k].label, d: this.PLANS[k].d, m: m.shared.includes(k), s: !m.shared.includes(k) })),
+        hasNote: !!m.note, noteTxt: m.note || '',
+        msgTap: () => this.showToast('Opening chat with ' + m.name + '\u2026')
+      };
+    }) : [];
+
+    const dots = s.routes.map((r, i) => ({ w: i === s.idx ? 20 : 7, bg: i === s.idx ? '#FFFFFF' : 'rgba(255,255,255,.35)' }));
+
+    const days = [];
+    for (let d = 1; d <= 30; d++) {
+      const isEnd = d === s.selStart || d === s.selEnd;
+      const inR = s.selStart != null && s.selEnd != null && d > s.selStart && d < s.selEnd;
+      days.push({
+        n: d, tap: () => this.dayTap(d),
+        bg: isEnd ? '#1E70C4' : (inR ? 'rgba(30,112,196,.28)' : 'transparent'),
+        col: isEnd ? '#fff' : (inR ? '#CFE6FF' : 'rgba(255,255,255,.92)'),
+        fw: isEnd ? 700 : 500,
+        rad: isEnd ? '12px' : '10px'
+      });
+    }
+    const both = s.selStart != null && s.selEnd != null;
+    const nSel = both ? s.selEnd - s.selStart : 0;
+    let rangeLabel = 'Tap the arrival date first';
+    if (s.selStart != null && s.selEnd == null) rangeLabel = 'Now tap the departure date';
+    if (both) rangeLabel = 'Jun ' + s.selStart + ' \u2192 Jun ' + s.selEnd + ' \u00b7 ' + (nSel === 0 ? 'Same day' : nSel + ' night' + (nSel === 1 ? '' : 's'));
+
+    let delName = '';
+    if (s.confirmDel) {
+      const r = s.routes.find((x) => x.id === s.confirmDel);
+      if (r) delName = r.from.code + ' \u2192 ' + r.to.code + ' \u00b7 ' + r.to.city;
+    }
+
+    const mkOpts = (list, sel, which) => list.map((o) => ({
+      city: o.city, code: o.code,
+      sel: !!(sel && sel.code === o.code),
+      bg: (sel && sel.code === o.code) ? 'rgba(30,112,196,.25)' : 'transparent',
+      fw: (sel && sel.code === o.code) ? 700 : 500,
+      ic: (sel && sel.code === o.code) ? '#F2890C' : 'rgba(255,255,255,.6)',
+      tap: () => this.pickAirport(which, o)
+    }));
+
+    const ready = !!(s.cDest && s.cArr != null && s.cDep != null);
+    const destCity = s.cDest ? s.cDest.city : 'your layover';
+
+    return {
+      screenRef: this.screenEl, trackRef: this.trackEl, swipeRef: this.swipeEl, cardZoneRef: this.cardZoneEl,
+      isPlanner: s.view === 'planner', isCreate: s.view === 'create',
+      nRoutes: n, hasRoutes: n > 0, empty: n === 0,
+      counter: (s.idx + 1) + ' / ' + n,
+      showDots, dots,
+      editFilled: eb !== 'soft', editSoft: eb === 'soft',
+      trackTf: 'translateX(calc(' + (s.idx * -100) + '% + ' + s.drag + 'px))',
+      trackTr: s.dragging ? 'none' : 'transform .32s cubic-bezier(.22,.61,.36,1)',
+      trackWrapH: s.trackH ? s.trackH + 'px' : 'auto',
+      routesV,
+      hasCrew: !!cur && cur.crew.length > 0,
+      noCrew: !!cur && cur.crew.length === 0,
+      crewLabel: cur ? cur.crew.length + ' crew ' + (cur.crew.length === 1 ? 'member' : 'members') + ' at this stop!' : '',
+      noCrewTxt: cur ? 'Nobody\u2019s layover overlaps yours in ' + cur.to.city + ' right now. You\u2019re visible \u2014 we\u2019ll notify you the moment someone matches.' : '',
+      crew,
+      openNew: () => this.openCreate('new'),
+      tapDiscover: () => this.showToast('Discover \u2014 outside this prototype'),
+      tapMessages: () => this.showToast('Messages \u2014 outside this prototype'),
+      tapProfile: () => this.showToast('Profile \u2014 outside this prototype'),
+      hasToast: !!s.toast, toastMsg: s.toast,
+      confirmOpen: !!s.confirmDel, delName,
+      cancelDel: this.cancelDel, confirmDelete: this.confirmDelete, stopProp: this.stopProp,
+
+      createTitle: s.cMode === 'edit' ? 'Edit Route' : 'Create New Route',
+      createCta: s.cMode === 'edit' ? 'Save Route' : 'Create Route',
+      fromCity: s.cFrom.city, fromCode: s.cFrom.code,
+      fromOpen: s.pickerOpen === 'from', destOpen: s.pickerOpen === 'dest',
+      fromChev: s.pickerOpen === 'from' ? 'rotate(180deg)' : 'none',
+      destChev: s.pickerOpen === 'dest' ? 'rotate(180deg)' : 'none',
+      fromBorder: s.pickerOpen === 'from' ? '1.5px solid #6FB1E8' : '1px solid rgba(255,255,255,.16)',
+      destBorder: s.pickerOpen === 'dest' ? '1.5px solid #6FB1E8' : '1px solid rgba(255,255,255,.16)',
+      fromRing: s.pickerOpen === 'from' ? '0 0 0 4px rgba(111,177,232,.15)' : 'none',
+      destRing: s.pickerOpen === 'dest' ? '0 0 0 4px rgba(111,177,232,.15)' : 'none',
+      toggleFrom: () => this.togglePicker('from'),
+      toggleDest: () => this.togglePicker('dest'),
+      fromOpts: mkOpts(this.HOME_AIRPORTS, s.cFrom, 'from'),
+      destOpts: mkOpts(this.DEST_AIRPORTS, s.cDest, 'dest'),
+      destLabel: s.cDest ? s.cDest.city + ' (' + s.cDest.code + ')' : 'Where\u2019s your next stop?',
+      destColor: s.cDest ? '#fff' : 'rgba(255,255,255,.5)',
+      cArrSet: s.cArr != null, cArrUnset: s.cArr == null,
+      cDepSet: s.cDep != null, cDepUnset: s.cDep == null,
+      cArrDayTxt: s.cArr != null ? this.fmtDTc(s.cArr) : '', cArrTimeTxt: s.cArr != null ? this.fmtTime(s.cArr) : '',
+      cDepDayTxt: s.cDep != null ? this.fmtDTc(s.cDep) : '', cDepTimeTxt: s.cDep != null ? this.fmtTime(s.cDep) : '',
+      cBoth: s.cArr != null && s.cDep != null,
+      cStopLine: (s.cArr != null && s.cDep != null) ? 'Stopover in ' + destCity + ' \u00b7 ' + this.nightsTxt(s.cArr, s.cDep) : '',
+      plansHint: s.cPicks.length + ' selected',
+      heartLine: s.cDest ? 'What are you up for in ' + destCity + '?' : 'What are you up for on this trip?',
+      cChips: Object.keys(this.PLANS).map((k) => {
+        const sel = s.cPicks.includes(k);
+        return { full: this.PLANS[k].full, d: this.PLANS[k].d, sel,
+          bg: sel ? '#34C759' : 'rgba(255,255,255,.07)',
+          bd: sel ? '#34C759' : 'rgba(255,255,255,.22)',
+          ic: sel ? '#fff' : 'rgba(255,255,255,.65)',
+          col: sel ? '#fff' : 'rgba(255,255,255,.8)',
+          tap: () => this.togglePick(k) };
+      }),
+      cNotes: s.cNotes, onNotes: this.onNotes,
+      visBg: s.cVisible ? 'rgba(52,199,89,.16)' : 'rgba(255,255,255,.05)',
+      visBd: s.cVisible ? 'rgba(52,199,89,.5)' : 'rgba(255,255,255,.12)',
+      visSw: s.cVisible ? '#34C759' : 'rgba(255,255,255,.25)',
+      visKnob: s.cVisible ? 13 : 1,
+      toggleVis: this.toggleVis,
+      backTap: this.closeCreate, submitTap: this.submitCreate,
+      ctaBg: ready ? '#1E70C4' : 'rgba(255,255,255,.12)',
+      ctaCol: ready ? '#fff' : 'rgba(255,255,255,.45)',
+      ctaSh: ready ? '0 6px 18px rgba(30,112,196,.4)' : 'none',
+      ctaCur: ready ? 'pointer' : 'default',
+
+      openRange: this.openRange,
+      sheetOpen: s.sheetOpen, closeSheet: this.closeSheet,
+      sheetRoute: s.cFrom.city + ' (' + s.cFrom.code + ') \u2192 ' + (s.cDest ? s.cDest.city + ' (' + s.cDest.code + ')' : 'pick the arrival airport'),
+      wdays: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+      days, rangeLabel,
+      selArrT: s.selArrT, selDepT: s.selDepT, onArrT: this.onArrT, onDepT: this.onDepT,
+      saveDates: this.saveDates,
+      saveBg: both ? '#1E70C4' : 'rgba(255,255,255,.12)',
+      saveCol: both ? '#fff' : 'rgba(255,255,255,.45)',
+      saveSh: both ? '0 6px 18px rgba(30,112,196,.4)' : 'none',
+      saveLabel: both ? 'Save \u00b7 Jun ' + s.selStart + ' \u2192 Jun ' + s.selEnd : 'Select both dates'
+    };
+  }
+}
+</script>
+
+
+</body></html>
